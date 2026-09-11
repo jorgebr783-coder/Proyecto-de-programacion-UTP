@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de RAEE - Avance de Proyecto | Taller de Programación Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación (Semana 2) -->
+    <header>
+        <div class="logo-container">
+            <h1>EcoTecnología RAEE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#impacto">Impacto</a></li>
+                <li><a href="#acopio">Puntos de Acopio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal (Semana 2 y S4) -->
+    <main id="inicio">
+        <section class="bienvenida">
+            <h2>Gestión Responsable de Dispositivos Electrónicos</h2>
+            <p>Promovemos la reutilización, recolección y disposición adecuada de los residuos de aparatos eléctricos y electrónicos (RAEE) para proteger nuestro medio ambiente.</p>
+        </section>
+
+        <!-- Sección con Artículos (Semana 2) -->
+        <section id="impacto">
+            <h2>¿Por qué reciclar tus aparatos en desuso?</h2>
+            <article>
+                <h3>Reducción de Contaminación</h3>
+                <p>Los dispositivos electrónicos contienen metales pesados y componentes tóxicos que dañan gravemente el suelo y el agua si se desechan en la basura común.</p>
+            </article>
+            <article>
+                <h3>Economía Circular</h3>
+                <p>Permite recuperar materiales valiosos como oro, plata, cobre y plástico reutilizable, disminuyendo la extracción innecesaria de nuevos recursos naturales.</p>
+            </article>
+        </section>
+
+        <!-- Sección de Tabla de Datos (Semana 4) -->
+        <section id="acopio">
+            <h2>Clasificación y Puntos de Acopio Autorizados</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Categoría RAEE</th>
+                            <th>Ejemplos de Dispositivos</th>
+                            <th>Sede / Centro de Acopio Asignado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Línea Gris (Informática)</td>
+                            <td>Laptops, CPUs, celulares, tablets, teclados</td>
+                            <td>Planta Central de Reciclaje Tecnológico</td>
+                        </tr>
+                        <tr>
+                            <td>Línea Marrón (Audio y Video)</td>
+                            <td>Televisores antiguos, equipos de sonido, consolas</td>
+                            <td>Módulo Municipal de Acopio Ecológico</td>
+                        </tr>
+                        <tr>
+                            <td>Pequeños Electrodomésticos</td>
+                            <td>Licuadoras, planchas, microondas, tostadoras</td>
+                            <td>Punto Verde Comercial Autorizado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sección de Multimedia y Formulario (Semana 3) -->
+        <section id="contacto">
+            <h2>Sensibilización y Solicitud de Recolección</h2>
+            
+            <div class="multimedia-box">
+                <h3>Video Informativo sobre los RAEE</h3>
+                <video width="100%" controls>
+                    <source src="media/video-clip.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+
+            <form action="procesar.php" method="POST">
+                <h3>Registra tus Aparatos para Reciclaje</h3>
+                
+                <label for="nombre">Nombres y Apellidos:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+                <label for="mensaje">Detalle de los dispositivos en desuso:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indique qué aparatos desea entregar y su estado actual..."></textarea>
+
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de Página (Semana 2) -->
+    <footer>
+        <p>&copy; 2026 Gestión Responsable de RAEE - Taller de Programación Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
